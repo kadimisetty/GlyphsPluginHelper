@@ -60,32 +60,39 @@
      forType:NSPasteboardTypeString];
 }
 
+- (NSViewController <GSGlyphEditViewControllerProtocol> *)myActiveEditViewController {
+    NSWindowController <GSWindowControllerProtocol>* wc =
+        (NSWindowController <GSWindowControllerProtocol>*) self.windowController;
 
-// MARK: COPY ACTIONS
-
-- (IBAction)myLabel1CopyButtonAction:(id)sender {
-    [FTHelper copyStringToClipboard:self.myLabel1.stringValue];
+        return wc.activeEditViewController;
 }
 
+// MARK: COPY ACTIONS
 
 - (IBAction)myLabel2CopyButtonAction:(id)sender {
     [FTHelper copyStringToClipboard:self.myLabel2.stringValue];
 }
 
-// MARK: INPUT BUTTON ACTIONS
 
-- (IBAction)myInput2ButtonAction:(id)sender {
+- (IBAction)myLabel1CopyButtonAction:(id)sender {
+    [FTHelper copyStringToClipboard:self.myLabel1.stringValue];
 }
+
+// MARK: INPUT BUTTON ACTIONS
 
 - (IBAction)myInput1ButtonAction:(id)sender {
 }
 
-// MARK: F1, F2 BUTTON ACTIONS
 
-- (IBAction)f2ButtonAction:(id)sender {
+- (IBAction)myInput2ButtonAction:(id)sender {
 }
 
-- (IBAction)f1ButtonAction:(id)sender {
+// MARK: F1, F2 BUTTON ACTIONS
+
+- (IBAction)myF1ButtonAction:(id)sender {
+}
+
+- (IBAction)myF2ButtonAction:(id)sender {
 }
 
 @end

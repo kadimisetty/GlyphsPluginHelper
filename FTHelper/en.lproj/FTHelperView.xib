@@ -7,6 +7,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="FTHelper">
             <connections>
+                <outlet property="myF1Button" destination="xsm-70-oN6" id="icr-gl-WvI"/>
+                <outlet property="myF2Button" destination="kf4-uQ-kUD" id="j8p-6e-LER"/>
                 <outlet property="myInput1TextField" destination="hHb-Tj-E0K" id="nA0-m0-Xl2"/>
                 <outlet property="myInput2TextField" destination="jSw-1q-21k" id="9sb-1d-h2T"/>
                 <outlet property="myLabel1" destination="Z3P-Pw-3Pq" id="mvw-h9-yiX"/>
@@ -85,7 +87,7 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="f1ButtonAction:" target="-2" id="08c-iC-qqq"/>
+                        <action selector="myF1ButtonAction:" target="-2" id="08c-iC-qqq"/>
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kf4-uQ-kUD">
@@ -95,7 +97,7 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="f2ButtonAction:" target="-2" id="WqR-4C-Cdf"/>
+                        <action selector="myF2ButtonAction:" target="-2" id="WqR-4C-Cdf"/>
                     </connections>
                 </button>
                 <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="y0P-ei-eAA">
