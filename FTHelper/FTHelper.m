@@ -3,7 +3,7 @@
 //  FTHelper
 //
 //  Created by Sri Krishna Kadimisetty on 9/13/21.
-//  
+//
 //
 
 #import "FTHelper.h"
@@ -11,6 +11,8 @@
 @implementation FTHelper
 
 @synthesize windowController;
+
+// MARK: GLYPHS
 
 - (id) init {
 	self = [super initWithNibName:@"FTHelperView" bundle:[NSBundle bundleForClass:[self class]]];
@@ -48,20 +50,38 @@
 - (NSView *)theView {
 	return [self view];
 }
+
+// MARK: COPY ACTIONS
+
+- (IBAction)myLabel1CopyButtonAction:(id)sender {
+	[[NSPasteboard generalPasteboard] clearContents];
+	[[NSPasteboard generalPasteboard]
+	 setString:self.myLabel1.stringValue
+	 forType:NSPasteboardTypeString];
+}
+
+
+- (IBAction)myLabel2CopyButtonAction:(id)sender {
+	[[NSPasteboard generalPasteboard] clearContents];
+	[[NSPasteboard generalPasteboard]
+	 setString:self.myLabel2.stringValue
+	 forType:NSPasteboardTypeString];
+}
+
+// MARK: INPUT BUTTON ACTIONS
+
 - (IBAction)myInput2ButtonAction:(id)sender {
 }
 
 - (IBAction)myInput1ButtonAction:(id)sender {
 }
+
+// MARK: F1, F2 BUTTON ACTIONS
+
 - (IBAction)f2ButtonAction:(id)sender {
 }
 
 - (IBAction)f1ButtonAction:(id)sender {
 }
 
-- (IBAction)myLabel2CopyButtonAction:(id)sender {
-}
-
-- (IBAction)myLabel1CopyButtonAction:(id)sender {
-}
 @end
