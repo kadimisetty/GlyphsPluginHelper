@@ -51,21 +51,25 @@
 	return [self view];
 }
 
+// MARK: HELPERS
+
++ (void) copyStringToClipboard:(NSString*) stringToCopy {
+    [[NSPasteboard generalPasteboard] clearContents];
+    [[NSPasteboard generalPasteboard]
+     setString:stringToCopy
+     forType:NSPasteboardTypeString];
+}
+
+
 // MARK: COPY ACTIONS
 
 - (IBAction)myLabel1CopyButtonAction:(id)sender {
-	[[NSPasteboard generalPasteboard] clearContents];
-	[[NSPasteboard generalPasteboard]
-	 setString:self.myLabel1.stringValue
-	 forType:NSPasteboardTypeString];
+    [FTHelper copyStringToClipboard:self.myLabel1.stringValue];
 }
 
 
 - (IBAction)myLabel2CopyButtonAction:(id)sender {
-	[[NSPasteboard generalPasteboard] clearContents];
-	[[NSPasteboard generalPasteboard]
-	 setString:self.myLabel2.stringValue
-	 forType:NSPasteboardTypeString];
+    [FTHelper copyStringToClipboard:self.myLabel2.stringValue];
 }
 
 // MARK: INPUT BUTTON ACTIONS
