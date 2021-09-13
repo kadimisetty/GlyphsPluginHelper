@@ -54,28 +54,28 @@
 // MARK: HELPERS
 
 + (void) copyStringToClipboard:(NSString*) stringToCopy {
-    [[NSPasteboard generalPasteboard] clearContents];
-    [[NSPasteboard generalPasteboard]
-     setString:stringToCopy
-     forType:NSPasteboardTypeString];
+	[[NSPasteboard generalPasteboard] clearContents];
+	[[NSPasteboard generalPasteboard]
+	 setString:stringToCopy
+	 forType:NSPasteboardTypeString];
 }
 
 - (NSViewController <GSGlyphEditViewControllerProtocol> *)myActiveEditViewController {
-    NSWindowController <GSWindowControllerProtocol>* wc =
-        (NSWindowController <GSWindowControllerProtocol>*) self.windowController;
+	NSWindowController <GSWindowControllerProtocol>* wc =
+		(NSWindowController <GSWindowControllerProtocol>*) self.windowController;
 
-        return wc.activeEditViewController;
+	return wc.activeEditViewController;
 }
 
 // MARK: COPY ACTIONS
 
 - (IBAction)myLabel2CopyButtonAction:(id)sender {
-    [FTHelper copyStringToClipboard:self.myLabel2.stringValue];
+	[FTHelper copyStringToClipboard:self.myLabel2.stringValue];
 }
 
 
 - (IBAction)myLabel1CopyButtonAction:(id)sender {
-    [FTHelper copyStringToClipboard:self.myLabel1.stringValue];
+	[FTHelper copyStringToClipboard:self.myLabel1.stringValue];
 }
 
 // MARK: INPUT BUTTON ACTIONS
