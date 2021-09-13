@@ -48,4 +48,20 @@
 - (NSView *)theView {
 	return [self view];
 }
+- (IBAction)myInput2ButtonAction:(id)sender {
+}
+
+- (IBAction)myInput1ButtonAction:(id)sender {
+}
+- (IBAction)f2ButtonAction:(id)sender {
+}
+
+- (IBAction)f1ButtonAction:(id)sender {
+}
+
+- (IBAction)myLabel2CopyButtonAction:(id)sender {
+}
+
+- (IBAction)myLabel1CopyButtonAction:(id)sender {
+}
 @end

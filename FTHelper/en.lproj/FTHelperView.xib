@@ -7,6 +7,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="FTHelper">
             <connections>
+                <outlet property="myInput1TextField" destination="hHb-Tj-E0K" id="nA0-m0-Xl2"/>
+                <outlet property="myInput2TextField" destination="jSw-1q-21k" id="9sb-1d-h2T"/>
+                <outlet property="myLabel1" destination="Z3P-Pw-3Pq" id="mvw-h9-yiX"/>
+                <outlet property="myLabel2" destination="cY8-XZ-2YM" id="DnH-sF-gmZ"/>
                 <outlet property="view" destination="1" id="inQ-tR-d0j"/>
             </connections>
         </customObject>
@@ -57,6 +61,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="myInput1ButtonAction:" target="-2" id="kKj-gs-Eu1"/>
+                    </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ofQ-NH-35T">
                     <rect key="frame" x="110" y="106" width="50" height="32"/>
@@ -64,23 +71,32 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="myInput2ButtonAction:" target="-2" id="SSW-Mr-PNH"/>
+                    </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-70-oN6">
                     <rect key="frame" x="10" y="13" width="76" height="32"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="62" id="wWz-to-axh"/>
                     </constraints>
-                    <buttonCell key="cell" type="push" title="F3" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Waz-BH-jvF">
+                    <buttonCell key="cell" type="push" title="F1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Waz-BH-jvF">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="f1ButtonAction:" target="-2" id="08c-iC-qqq"/>
+                    </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kf4-uQ-kUD">
                     <rect key="frame" x="82" y="13" width="76" height="32"/>
-                    <buttonCell key="cell" type="push" title="F4" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s4f-fu-jwS">
+                    <buttonCell key="cell" type="push" title="F2" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s4f-fu-jwS">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="f2ButtonAction:" target="-2" id="WqR-4C-Cdf"/>
+                    </connections>
                 </button>
                 <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="y0P-ei-eAA">
                     <rect key="frame" x="17" y="46" width="134" height="5"/>
@@ -94,6 +110,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="myLabel1CopyButtonAction:" target="-2" id="OB2-8V-pNf"/>
+                    </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5LA-pR-Gb7">
                     <rect key="frame" x="133" y="56" width="20" height="22"/>
@@ -101,6 +120,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="myLabel2CopyButtonAction:" target="-2" id="FwG-1I-VWx"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>
