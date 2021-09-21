@@ -23,11 +23,14 @@
 - (IBAction)myLabel1CopyButtonAction:(id)sender;
 - (IBAction)myLabel2CopyButtonAction:(id)sender;
 
-// F1, F2 BUTTONS
+// F1, F2, F3 BUTTONS
 
 @property (weak) IBOutlet NSButton *myF1Button;
 @property (weak) IBOutlet NSButton *myF2Button;
+@property (weak) IBOutlet NSButton *myF3Button;
+
 - (IBAction)myF1ButtonAction:(id)sender;
 - (IBAction)myF2ButtonAction:(id)sender;
+- (IBAction)myF3ButtonAction:(id)sender;
 
 @end

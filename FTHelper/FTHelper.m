@@ -60,10 +60,16 @@
 	 forType:NSPasteboardTypeString];
 }
 
++ (void)showAlertWithtitle:(NSString*)title andInformativeText:(NSString*)informativeText {
+	NSAlert* alert = [[NSAlert alloc] init];
+	alert.messageText = title;
+	alert.informativeText = informativeText;
+	[alert runModal];
+}
+
 - (NSViewController <GSGlyphEditViewControllerProtocol> *)myActiveEditViewController {
 	NSWindowController <GSWindowControllerProtocol>* wc =
 		(NSWindowController <GSWindowControllerProtocol>*) self.windowController;
-
 	return wc.activeEditViewController;
 }
 
@@ -72,7 +78,6 @@
 - (IBAction)myLabel2CopyButtonAction:(id)sender {
 	[FTHelper copyStringToClipboard:self.myLabel2.stringValue];
 }
-
 
 - (IBAction)myLabel1CopyButtonAction:(id)sender {
 	[FTHelper copyStringToClipboard:self.myLabel1.stringValue];
@@ -83,16 +88,20 @@
 - (IBAction)myInput1ButtonAction:(id)sender {
 }
 
-
 - (IBAction)myInput2ButtonAction:(id)sender {
 }
 
-// MARK: F1, F2 BUTTON ACTIONS
+// MARK: F1, F2, F3 BUTTON ACTIONS
 
 - (IBAction)myF1ButtonAction:(id)sender {
+//    self.myF1Button.toolTip = @"F1 button tool tip";
 }
 
 - (IBAction)myF2ButtonAction:(id)sender {
+//    self.myF2Button.toolTip = @"F2 button tool tip";
 }
 
+- (IBAction)myF3ButtonAction:(id)sender {
+    //    self.myF3Button.toolTip = @"F2 button tool tip";
+}
 @end
