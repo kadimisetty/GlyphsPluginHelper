@@ -51,6 +51,16 @@
 	return [self view];
 }
 
+// MARK: LABEL BUTTON COPY ACTIONS
+
+- (IBAction)myLabel2CopyButtonAction:(id)sender {
+    [FTHelper copyStringToClipboard:self.myLabel2.stringValue];
+}
+
+- (IBAction)myLabel1CopyButtonAction:(id)sender {
+    [FTHelper copyStringToClipboard:self.myLabel1.stringValue];
+}
+
 // MARK: HELPERS
 
 + (void) copyStringToClipboard:(NSString*) stringToCopy {
@@ -73,15 +83,9 @@
 	return wc.activeEditViewController;
 }
 
-// MARK: COPY ACTIONS
-
-- (IBAction)myLabel2CopyButtonAction:(id)sender {
-	[FTHelper copyStringToClipboard:self.myLabel2.stringValue];
-}
-
-- (IBAction)myLabel1CopyButtonAction:(id)sender {
-	[FTHelper copyStringToClipboard:self.myLabel1.stringValue];
-}
+// --------------------------------------------------------
+// ---------- BEGIN EDITING FROM HERE ONWARDS: ------------
+// --------------------------------------------------------
 
 // MARK: INPUT BUTTON ACTIONS
 
@@ -89,6 +93,15 @@
 }
 
 - (IBAction)myInput2ButtonAction:(id)sender {
+}
+
+// MARK: LABEL BUTTON ACTIONS
+
+- (IBAction)myLabel1ButtonAction:(id)sender {
+    self.myLabel1.stringValue = @"okay then";
+}
+
+- (IBAction)myLabel2ButtonAction:(id)sender {
 }
 
 // MARK: F1, F2, F3 BUTTON ACTIONS
@@ -102,6 +115,7 @@
 }
 
 - (IBAction)myF3ButtonAction:(id)sender {
-    //    self.myF3Button.toolTip = @"F2 button tool tip";
+//    self.myF3Button.toolTip = @"F3 button tool tip";
 }
+
 @end

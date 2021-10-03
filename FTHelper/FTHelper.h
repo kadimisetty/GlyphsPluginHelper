@@ -22,6 +22,8 @@
 @property (weak) IBOutlet NSTextField *myLabel2;
 - (IBAction)myLabel1CopyButtonAction:(id)sender;
 - (IBAction)myLabel2CopyButtonAction:(id)sender;
+- (IBAction)myLabel1ButtonAction:(id)sender;
+- (IBAction)myLabel2ButtonAction:(id)sender;
 
 // F1, F2, F3 BUTTONS
 
