@@ -83,9 +83,9 @@
 	return wc.activeEditViewController;
 }
 
-// --------------------------------------------------------
-// ---------- BEGIN EDITING FROM HERE ONWARDS: ------------
-// --------------------------------------------------------
+// --------------------------------
+// BEGIN EDITING FROM HERE ONWARDS:
+// --------------------------------
 
 // MARK: INPUT BUTTON ACTIONS
 
