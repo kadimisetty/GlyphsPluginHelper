@@ -1,21 +1,21 @@
 //
-//  FTHelper.m
-//  FTHelper
+//  GlyphsPluginHelper.m
+//  GlyphsPluginHelper
 //
 //  Created by Sri Krishna Kadimisetty on 9/13/21.
 //
 //
 
-#import "FTHelper.h"
+#import "GlyphsPluginHelper.h"
 
-@implementation FTHelper
+@implementation GlyphsPluginHelper
 
 @synthesize windowController;
 
 // MARK: GLYPHS
 
 - (id) init {
-	self = [super initWithNibName:@"FTHelperView" bundle:[NSBundle bundleForClass:[self class]]];
+	self = [super initWithNibName:@"GlyphsPluginHelperView" bundle:[NSBundle bundleForClass:[self class]]];
 	return self;
 }
 
@@ -26,7 +26,7 @@
 
 - (NSString *)title {
 	// Return the name of the tool as it will appear in the menu.
-	return @"FT Helper";
+	return @"Plugin Helper";
 }
 
 - (NSInteger)maxHeight {
@@ -38,12 +38,12 @@
 }
 
 - (NSUInteger)currentHeight {
-	return [[NSUserDefaults standardUserDefaults] integerForKey:@"FTHelperCurrentHeight"];
+	return [[NSUserDefaults standardUserDefaults] integerForKey:@"GlyphsPluginHelperCurrentHeight"];
 }
 
 - (void)setCurrentHeight:(NSUInteger)newHeight {
 	if (newHeight >= [self minHeight] && newHeight <= [self maxHeight]) {
-		[[NSUserDefaults standardUserDefaults] setInteger:newHeight forKey:@"FTHelperCurrentHeight"];
+		[[NSUserDefaults standardUserDefaults] setInteger:newHeight forKey:@"GlyphsPluginHelperCurrentHeight"];
 	}
 }
 
@@ -54,11 +54,11 @@
 // MARK: LABEL BUTTON COPY ACTIONS
 
 - (IBAction)myLabel2CopyButtonAction:(id)sender {
-    [FTHelper copyStringToClipboard:self.myLabel2.stringValue];
+    [GlyphsPluginHelper copyStringToClipboard:self.myLabel2.stringValue];
 }
 
 - (IBAction)myLabel1CopyButtonAction:(id)sender {
-    [FTHelper copyStringToClipboard:self.myLabel1.stringValue];
+    [GlyphsPluginHelper copyStringToClipboard:self.myLabel1.stringValue];
 }
 
 // MARK: HELPERS

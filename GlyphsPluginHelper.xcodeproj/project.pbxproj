@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1001709326EF0DA200453152 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1001709226EF0DA200453152 /* Cocoa.framework */; };
-		1001709726EF0DA200453152 /* FTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001709626EF0DA200453152 /* FTHelper.m */; };
-		1001709A26EF0DA200453152 /* FTHelperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1001709826EF0DA200453152 /* FTHelperView.xib */; };
+		1001709726EF0DA200453152 /* GlyphsPluginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001709626EF0DA200453152 /* GlyphsPluginHelper.m */; };
+		1001709A26EF0DA200453152 /* GlyphsPluginHelperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1001709826EF0DA200453152 /* GlyphsPluginHelperView.xib */; };
 		1001709C26EF0DA200453152 /* GlyphsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1001709B26EF0DA200453152 /* GlyphsCore.framework */; };
-		1001709E26EF0DA200453152 /* FTHelper-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 1001709D26EF0DA200453152 /* FTHelper-Prefix.pch */; };
+		1001709E26EF0DA200453152 /* GlyphsPluginHelper-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 1001709D26EF0DA200453152 /* GlyphsPluginHelper-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1001708F26EF0DA200453152 /* FTHelper.glyphsPalette */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTHelper.glyphsPalette; sourceTree = BUILT_PRODUCTS_DIR; };
+		1001708F26EF0DA200453152 /* GlyphsPluginHelper.glyphsPalette */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlyphsPluginHelper.glyphsPalette; sourceTree = BUILT_PRODUCTS_DIR; };
 		1001709226EF0DA200453152 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		1001709526EF0DA200453152 /* FTHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTHelper.h; sourceTree = "<group>"; };
-		1001709626EF0DA200453152 /* FTHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTHelper.m; sourceTree = "<group>"; };
-		1001709926EF0DA200453152 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FTHelperView.xib; sourceTree = "<group>"; };
+		1001709526EF0DA200453152 /* GlyphsPluginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlyphsPluginHelper.h; sourceTree = "<group>"; };
+		1001709626EF0DA200453152 /* GlyphsPluginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlyphsPluginHelper.m; sourceTree = "<group>"; };
+		1001709926EF0DA200453152 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GlyphsPluginHelperView.xib; sourceTree = "<group>"; };
 		1001709B26EF0DA200453152 /* GlyphsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GlyphsCore.framework; path = "/Applications/Glyphs 3.app/Contents/Frameworks/GlyphsCore.framework"; sourceTree = "<absolute>"; };
-		1001709D26EF0DA200453152 /* FTHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTHelper-Prefix.pch"; sourceTree = "<group>"; };
+		1001709D26EF0DA200453152 /* GlyphsPluginHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlyphsPluginHelper-Prefix.pch"; sourceTree = "<group>"; };
 		1001709F26EF0DA200453152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		1001708626EF0DA200453152 = {
 			isa = PBXGroup;
 			children = (
-				1001709426EF0DA200453152 /* FTHelper */,
+				1001709426EF0DA200453152 /* GlyphsPluginHelper */,
 				1001709126EF0DA200453152 /* Frameworks */,
 				1001709026EF0DA200453152 /* Products */,
 			);
@@ -50,7 +50,7 @@
 		1001709026EF0DA200453152 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1001708F26EF0DA200453152 /* FTHelper.glyphsPalette */,
+				1001708F26EF0DA200453152 /* GlyphsPluginHelper.glyphsPalette */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,25 +63,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1001709426EF0DA200453152 /* FTHelper */ = {
+		1001709426EF0DA200453152 /* GlyphsPluginHelper */ = {
 			isa = PBXGroup;
 			children = (
-				1001709526EF0DA200453152 /* FTHelper.h */,
-				1001709626EF0DA200453152 /* FTHelper.m */,
-				1001709826EF0DA200453152 /* FTHelperView.xib */,
+				1001709526EF0DA200453152 /* GlyphsPluginHelper.h */,
+				1001709626EF0DA200453152 /* GlyphsPluginHelper.m */,
+				1001709826EF0DA200453152 /* GlyphsPluginHelperView.xib */,
 				1001709B26EF0DA200453152 /* GlyphsCore.framework */,
-				1001709D26EF0DA200453152 /* FTHelper-Prefix.pch */,
+				1001709D26EF0DA200453152 /* GlyphsPluginHelper-Prefix.pch */,
 				1001709F26EF0DA200453152 /* Info.plist */,
 			);
-			path = FTHelper;
+			path = GlyphsPluginHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1001708E26EF0DA200453152 /* FTHelper */ = {
+		1001708E26EF0DA200453152 /* GlyphsPluginHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 100170A226EF0DA200453152 /* Build configuration list for PBXNativeTarget "FTHelper" */;
+			buildConfigurationList = 100170A226EF0DA200453152 /* Build configuration list for PBXNativeTarget "GlyphsPluginHelper" */;
 			buildPhases = (
 				1001708B26EF0DA200453152 /* Sources */,
 				1001708C26EF0DA200453152 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = FTHelper;
-			productName = FTHelper;
-			productReference = 1001708F26EF0DA200453152 /* FTHelper.glyphsPalette */;
+			name = GlyphsPluginHelper;
+			productName = GlyphsPluginHelper;
+			productReference = 1001708F26EF0DA200453152 /* GlyphsPluginHelper.glyphsPalette */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1001708A26EF0DA200453152 /* Build configuration list for PBXProject "FTHelper" */;
+			buildConfigurationList = 1001708A26EF0DA200453152 /* Build configuration list for PBXProject "GlyphsPluginHelper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,7 +122,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1001708E26EF0DA200453152 /* FTHelper */,
+				1001708E26EF0DA200453152 /* GlyphsPluginHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -132,8 +132,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1001709A26EF0DA200453152 /* FTHelperView.xib in Resources */,
-				1001709E26EF0DA200453152 /* FTHelper-Prefix.pch in Resources */,
+				1001709A26EF0DA200453152 /* GlyphsPluginHelperView.xib in Resources */,
+				1001709E26EF0DA200453152 /* GlyphsPluginHelper-Prefix.pch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,19 +144,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1001709726EF0DA200453152 /* FTHelper.m in Sources */,
+				1001709726EF0DA200453152 /* GlyphsPluginHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1001709826EF0DA200453152 /* FTHelperView.xib */ = {
+		1001709826EF0DA200453152 /* GlyphsPluginHelperView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1001709926EF0DA200453152 /* en */,
 			);
-			name = FTHelperView.xib;
+			name = GlyphsPluginHelperView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,10 +281,10 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(USER_LIBRARY_DIR)/Application Support/Glyphs 3/Plugins";
 				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_APPS_DIR)/Glyphs 3.app/Contents/Frameworks\"";
-				GCC_PREFIX_HEADER = "FTHelper/FTHelper-Prefix.pch";
-				INFOPLIST_FILE = FTHelper/Info.plist;
+				GCC_PREFIX_HEADER = "GlyphsPluginHelper/GlyphsPluginHelper-Prefix.pch";
+				INFOPLIST_FILE = GlyphsPluginHelper/Info.plist;
 				INSTALL_PATH = /;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kadimisetty.FTHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadimisetty.GlyphsPluginHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = glyphsPalette;
 			};
@@ -296,10 +296,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_APPS_DIR)/Glyphs 3.app/Contents/Frameworks\"";
-				GCC_PREFIX_HEADER = "FTHelper/FTHelper-Prefix.pch";
-				INFOPLIST_FILE = FTHelper/Info.plist;
+				GCC_PREFIX_HEADER = "GlyphsPluginHelper/GlyphsPluginHelper-Prefix.pch";
+				INFOPLIST_FILE = GlyphsPluginHelper/Info.plist;
 				INSTALL_PATH = /;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kadimisetty.FTHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kadimisetty.GlyphsPluginHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = glyphsPalette;
 			};
@@ -308,7 +308,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1001708A26EF0DA200453152 /* Build configuration list for PBXProject "FTHelper" */ = {
+		1001708A26EF0DA200453152 /* Build configuration list for PBXProject "GlyphsPluginHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				100170A026EF0DA200453152 /* Debug */,
@@ -317,7 +317,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		100170A226EF0DA200453152 /* Build configuration list for PBXNativeTarget "FTHelper" */ = {
+		100170A226EF0DA200453152 /* Build configuration list for PBXNativeTarget "GlyphsPluginHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				100170A326EF0DA200453152 /* Debug */,
